@@ -1,0 +1,23 @@
+---
+title: "Day 6 Interactive"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+## Warm Up
+
+Recreate text of the first 3 pages in the book "Brown bear, brown bear, what do you see?"
+
+```{r}
+animal <- c("brown bear", "red bird", "yellow duck", "blue horse")
+
+for (i in 2:length(animal)) {
+  print(paste0(animal[i-1], ", ", animal[i-1], ", what do you see? I see a ", animal[i], " looking at me."))
+}
+```
